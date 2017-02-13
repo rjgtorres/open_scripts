@@ -1,3 +1,4 @@
+![Gedit look with DarkmateRT in Fortran](https://github.com/rjgtorres/open_scripts/blob/master/GEDIT_CONFIG/gedit_darkmateRT_look.png)
 
 gedit configuration files for fortran programming.
 
@@ -15,5 +16,3 @@ darkmate_RT.xml is a gedit color scheme based in the darkmate theme, it's altere
 to install copy the file to:
 
 cp darkmate_RT.xml /home/user/.local/share/gedit/styles
-
-![Gedit look with DarkmateRT in Fortran](https://github.com/rjgtorres/open_scripts/blob/master/GEDIT_CONFIG/gedit_darkmateRT_look.png)
