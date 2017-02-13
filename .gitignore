@@ -1,0 +1,89 @@
+# fortran developing folder structure #
+#######################################
+doc/doxygen
+include/
+bin/
+lib/
+
+# Data files #
+##############
+*.h5
+*.nc
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.so
+*.a
+*.pyc
+*.pyo
+*.o
+*.mod
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+*.txt
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*~
+
+# Images #
+#######
+*.jpg
+*.gif
+*.png
+*.svg
+*.ico
+
+# Video #
+######
+*.wmv
+*.mpg
+*.mpeg
+*.mp4
+*.mov
+*.flv
+*.avi
+*.ogv.o
+*.webm
+
+# Audio #
+#########
+*.wav
+*.mp3
+*.wma
+*.ogg
+
+# Fonts #
+#########
+*.eot
+*.ttf
+*.woff
+
