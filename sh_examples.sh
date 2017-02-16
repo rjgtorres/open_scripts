@@ -10,9 +10,10 @@ do
     echo $file
 done
 
-#cycle in the enumerated names or numbers
-for product in name1 name2 FRPPIXEL VEGA1 VEGA-D10 01 02 03
+# count number of files in folders
+for folder in `find path/to/folder -type d`
 do
+    echo `find $folder -type f | wc -l`
 done
 
 # cycle in several folders
@@ -112,20 +113,18 @@ do
     do
         for DAY in {01..31}
         do
-            for HOUR in {01..23}
+            for HOUR in {01..23..3} # With increments of 3
             do
                 for min in {00..59}
                 do
-                # count number of files in folder
-                conta_hora=`ls $DIR/$YEAR/$MONTH/$DAY/*$YEAR$MONTH$DAY*$min* | wc -l`
-                # print without changing line
-                echo -n conta_hora
+                    for product in name1 name2 FRPPIXEL VEGA1 VEGA-D10 01 02 03 #cycle in the enumerated names or numbers
+                    do
+                        # count number of files in folder
+                        conta_hora=`ls $DIR/$YEAR/$MONTH/$DAY/$product/*$YEAR$MONTH$DAY*$min* | wc -l`
+                        # print without changing line
+                        echo -n conta_hora
 done
 
-#incremented cycle
-for i in {0..10..2}
-do 
-done
 
 # cycle and execute something in an external machine through SSH
 for i in `sshpass -p "PASSWORD" ssh user@machine.com ls path/to/search/*.file`; do 
